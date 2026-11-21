@@ -181,11 +181,3 @@ Quantisation stores weights using fewer bits. FP16 uses 16 bits per weight while
 
 Assumptions: a 7B model in 4-bit, short-to-medium prompts (about 2,048 input tokens), up to 256 generated tokens, and variable user arrival times. Load the quantised model once; use a serving engine with continuous batching and paged KV cache; cap context/output lengths; set a bounded queue and per-user timeouts; use admission control when KV-cache capacity is reached; stream tokens; monitor GPU memory, queue depth, latency and tokens/sec; and load-test with 20 simultaneous sessions. Keep a safety margin for runtime/activations. Twenty connected users do not necessarily mean twenty long-context sequences can decode at full speed simultaneously; reduce batch concurrency or context limits if memory/latency exceed the budget.
 
-## Final submission checklist
-
-- [ ] Correct Task 2 gold pages/passages and rerun 150/300-word retrieval.
-- [ ] Run a separate Task 1 challenge/stress set and record real failures (or transparently state none found).
-- [ ] Fill manual quality notes for all 10 paired Task 3 prompts.
-- [ ] Record exact local/Kaggle hardware, OS, Python, Torch, CUDA and library versions.
-- [ ] Regenerate the final PDF after those corrections.
-- [ ] Push the repository (excluding large source archives/checkpoints if repository size limits require; retain downloadable artifacts separately).
