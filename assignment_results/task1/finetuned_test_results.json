@@ -1,0 +1,2582 @@
+{
+  "model": "lora_finetuned",
+  "examples": 100,
+  "valid_json_rate": 1.0,
+  "exact_match_accuracy": 1.0,
+  "predictions": [
+    {
+      "request": "Can you arrange a demo for John, Neha, Priya, Ravi on 2026-12-18 at 09:00? Location is Google Meet.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-18\",\"time\":\"09:00\",\"location\":\"Google Meet\",\"attendees\":[\"John\",\"Neha\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2027-01-15 at 14:00 at online. Invite Fatima, Neha, Ravi, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-15\",\"time\":\"14:00\",\"location\":\"online\",\"attendees\":[\"Fatima\",\"Neha\",\"Ravi\",\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please schedule a team sync for 2027-01-08 at 09:00 at Zoom. Invite Asha.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Zoom",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2027-01-08\",\"time\":\"09:00\",\"location\":\"Zoom\",\"attendees\":[\"Asha\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Zoom",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to organise a planning session on 2027-01-15, starting 10:30. It will be at Google Meet; participants: Priya.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-01-15\",\"time\":\"10:30\",\"location\":\"Google Meet\",\"attendees\":[\"Priya\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-02-03; time=13:30; place=Bengaluru office; people=John.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-02-03\",\"time\":\"13:30\",\"location\":\"Bengaluru office\",\"attendees\":[\"John\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please set up an interview for 2027-01-08 at 10:30 at Zoom. Invite Asha, Liam, Priya.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-01-08\",\"time\":\"10:30\",\"location\":\"Zoom\",\"attendees\":[\"Asha\",\"Liam\",\"Priya\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2027-02-12 at 15:30 at Conference Room A. Invite Mina, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-02-12\",\"time\":\"15:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Mina\",\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you book a project review for Arjun, Asha on 2026-12-11 at 11:00? Location is Bengaluru office.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2026-12-11\",\"time\":\"11:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Arjun\",\"Asha\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please arrange a demo for 2026-12-02 at 10:30 at Conference Room A. Invite Mina.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-02\",\"time\":\"10:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Mina\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to organise a planning session on 2026-12-18, starting 13:30. It will be at online; participants: Arjun.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "13:30",
+        "location": "online",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-18\",\"time\":\"13:30\",\"location\":\"online\",\"attendees\":[\"Arjun\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "13:30",
+        "location": "online",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to set up an interview on 2026-12-05, starting 09:00. It will be at Google Meet; participants: Fatima, John, Mina.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-05\",\"time\":\"09:00\",\"location\":\"Google Meet\",\"attendees\":[\"Fatima\",\"John\",\"Mina\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: schedule a meeting, 2026-12-05, 11:00, Kolkata office, attendees Arjun, Liam, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-05\",\"time\":\"11:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\",\"Liam\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2027-02-12; time=11:00; place=Conference Room A; people=Asha, Fatima, Priya, Sam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "11:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-02-12\",\"time\":\"11:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Asha\",\"Fatima\",\"Priya\",\"Sam\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "11:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you organise a planning session for Mina on 2027-02-12 at 09:00? Location is Conference Room A.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-02-12\",\"time\":\"09:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Mina\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: book a project review, 2026-12-11, 11:00, Bengaluru office, attendees John.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2026-12-11\",\"time\":\"11:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"John\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you schedule a team sync for John on 2027-02-03 at 11:00? Location is Zoom.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-02-03",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2027-02-03\",\"time\":\"11:00\",\"location\":\"Zoom\",\"attendees\":[\"John\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2027-02-03",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: schedule a team sync; date=2026-12-05; time=11:00; place=Kolkata office; people=Fatima, Mina, Priya, Sam.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-05\",\"time\":\"11:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Fatima\",\"Mina\",\"Priya\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: arrange a demo, 2027-02-03, 14:00, Bengaluru office, attendees Asha, John, Priya.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "John",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-02-03\",\"time\":\"14:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Asha\",\"John\",\"Priya\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "John",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you organise a planning session for Neha on 2026-12-18 at 16:00? Location is online.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "online",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-18\",\"time\":\"16:00\",\"location\":\"online\",\"attendees\":[\"Neha\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "online",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to organise a planning session on 2026-12-18, starting 11:00. It will be at Google Meet; participants: Arjun.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-18\",\"time\":\"11:00\",\"location\":\"Google Meet\",\"attendees\":[\"Arjun\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-11; time=14:00; place=Conference Room A; people=Arjun, Priya.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-11\",\"time\":\"14:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"Priya\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: schedule a meeting; date=2027-01-15; time=09:00; place=Bengaluru office; people=John.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-01-15\",\"time\":\"09:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"John\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please organise a planning session for 2026-12-05 at 09:00 at Bengaluru office. Invite Asha, Neha, Sam.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-05\",\"time\":\"09:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Asha\",\"Neha\",\"Sam\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please schedule a meeting for 2027-01-15 at 10:30 at Conference Room A. Invite Fatima, Liam, Mina.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-01-15\",\"time\":\"10:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Fatima\",\"Liam\",\"Mina\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: schedule a team sync; date=2027-01-15; time=10:30; place=Kolkata office; people=Neha, Ravi.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2027-01-15\",\"time\":\"10:30\",\"location\":\"Kolkata office\",\"attendees\":[\"Neha\",\"Ravi\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you book a project review for Liam, Neha on 2026-12-02 at 13:30? Location is Conference Room A.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-02",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2026-12-02\",\"time\":\"13:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Liam\",\"Neha\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2026-12-02",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: schedule a meeting, 2027-01-15, 11:00, online, attendees Mina, Neha, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-01-15\",\"time\":\"11:00\",\"location\":\"online\",\"attendees\":[\"Mina\",\"Neha\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2027-01-08 at 11:00 at Zoom. Invite Fatima, John, Mina, Priya.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-08\",\"time\":\"11:00\",\"location\":\"Zoom\",\"attendees\":[\"Fatima\",\"John\",\"Mina\",\"Priya\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you arrange a demo for Mina, Neha, Priya, Ravi on 2027-02-12 at 14:00? Location is Zoom.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "14:00",
+        "location": "Zoom",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-02-12\",\"time\":\"14:00\",\"location\":\"Zoom\",\"attendees\":[\"Mina\",\"Neha\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "14:00",
+        "location": "Zoom",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you schedule a team sync for Arjun, Neha, Sam on 2026-12-18 at 14:00? Location is Kolkata office.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-18\",\"time\":\"14:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\",\"Neha\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please set up an interview for 2027-02-03 at 13:30 at Google Meet. Invite Neha.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-02-03\",\"time\":\"13:30\",\"location\":\"Google Meet\",\"attendees\":[\"Neha\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2027-01-15 at 16:00 at Zoom. Invite Fatima, Mina, Priya.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-15\",\"time\":\"16:00\",\"location\":\"Zoom\",\"attendees\":[\"Fatima\",\"Mina\",\"Priya\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2026-12-11, 13:30, Kolkata office, attendees Arjun.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-11\",\"time\":\"13:30\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-02; time=09:00; place=Google Meet; people=Liam, Ravi, Sam.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Liam",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-02\",\"time\":\"09:00\",\"location\":\"Google Meet\",\"attendees\":[\"Liam\",\"Ravi\",\"Sam\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Liam",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: organise a planning session, 2027-02-12, 15:30, Conference Room A, attendees Ravi.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-02-12\",\"time\":\"15:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Ravi\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to schedule a team sync on 2026-12-02, starting 15:30. It will be at Zoom; participants: Arjun, Fatima.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "15:30",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Fatima"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-02\",\"time\":\"15:30\",\"location\":\"Zoom\",\"attendees\":[\"Arjun\",\"Fatima\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "15:30",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Fatima"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2026-12-11 at 11:00 at Kolkata office. Invite Arjun, Asha, John.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2026-12-11\",\"time\":\"11:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\",\"Asha\",\"John\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please schedule a meeting for 2026-12-02 at 10:30 at online. Invite Fatima.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "online",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-02\",\"time\":\"10:30\",\"location\":\"online\",\"attendees\":[\"Fatima\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "online",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you book a project review for Fatima on 2027-01-08 at 09:00? Location is Bengaluru office.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-08\",\"time\":\"09:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Fatima\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2026-12-02, 09:00, Conference Room A, attendees Arjun, John, Mina, Neha.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-02\",\"time\":\"09:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"John\",\"Mina\",\"Neha\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to arrange a demo on 2027-02-12, starting 16:00. It will be at Kolkata office; participants: Neha.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-02-12\",\"time\":\"16:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Neha\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: schedule a team sync, 2026-12-02, 10:30, Zoom, attendees Fatima, Mina.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-02\",\"time\":\"10:30\",\"location\":\"Zoom\",\"attendees\":[\"Fatima\",\"Mina\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: book a project review; date=2027-02-12; time=13:30; place=Conference Room A; people=Arjun, Ravi, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-02-12\",\"time\":\"13:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"Ravi\",\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2027-02-03; time=15:30; place=Google Meet; people=Asha, Liam, Mina, Neha.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "15:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-02-03\",\"time\":\"15:30\",\"location\":\"Google Meet\",\"attendees\":[\"Asha\",\"Liam\",\"Mina\",\"Neha\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "15:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-05; time=14:00; place=Bengaluru office; people=Liam.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-05\",\"time\":\"14:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Liam\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: schedule a meeting; date=2027-02-12; time=09:00; place=Conference Room A; people=Arjun, Liam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-02-12\",\"time\":\"09:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"Liam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you schedule a meeting for Fatima, Sam on 2026-12-11 at 11:00? Location is online.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-11\",\"time\":\"11:00\",\"location\":\"online\",\"attendees\":[\"Fatima\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you organise a planning session for Liam, Sam on 2026-12-05 at 10:30? Location is Kolkata office.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-05",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-05\",\"time\":\"10:30\",\"location\":\"Kolkata office\",\"attendees\":[\"Liam\",\"Sam\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-05",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you schedule a team sync for Arjun, Neha, Ravi on 2026-12-11 at 11:00? Location is Kolkata office.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-11\",\"time\":\"11:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\",\"Neha\",\"Ravi\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2026-12-11, 14:00, Kolkata office, attendees Fatima, Mina, Sam.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-11\",\"time\":\"14:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Fatima\",\"Mina\",\"Sam\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to organise a planning session on 2027-02-03, starting 09:00. It will be at Google Meet; participants: Mina.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-02-03\",\"time\":\"09:00\",\"location\":\"Google Meet\",\"attendees\":[\"Mina\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to schedule a meeting on 2026-12-05, starting 13:30. It will be at Kolkata office; participants: Asha, Fatima, John, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "John",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-05\",\"time\":\"13:30\",\"location\":\"Kolkata office\",\"attendees\":[\"Asha\",\"Fatima\",\"John\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "John",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: schedule a team sync, 2027-02-03, 16:00, Bengaluru office, attendees Asha.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2027-02-03\",\"time\":\"16:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Asha\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-05; time=09:00; place=Kolkata office; people=Arjun.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-05\",\"time\":\"09:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you organise a planning session for Arjun on 2026-12-02 at 10:30? Location is Conference Room A.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-02\",\"time\":\"10:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to book a project review on 2027-01-08, starting 10:30. It will be at Conference Room A; participants: Arjun, John, Priya, Ravi.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-08\",\"time\":\"10:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"John\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to set up an interview on 2027-01-08, starting 09:00. It will be at online; participants: Ravi.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-01-08\",\"time\":\"09:00\",\"location\":\"online\",\"attendees\":[\"Ravi\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to schedule a meeting on 2026-12-11, starting 09:00. It will be at Conference Room A; participants: Fatima, Liam, Mina, Ravi.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-11",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-11\",\"time\":\"09:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Fatima\",\"Liam\",\"Mina\",\"Ravi\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-11",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: schedule a team sync, 2027-02-12, 10:30, Zoom, attendees Fatima, Liam, Priya, Sam.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2027-02-12\",\"time\":\"10:30\",\"location\":\"Zoom\",\"attendees\":[\"Fatima\",\"Liam\",\"Priya\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: book a project review, 2026-12-05, 13:30, Bengaluru office, attendees Liam, Mina, Neha, Ravi.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Mina",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2026-12-05\",\"time\":\"13:30\",\"location\":\"Bengaluru office\",\"attendees\":[\"Liam\",\"Mina\",\"Neha\",\"Ravi\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Mina",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-05; time=09:00; place=Bengaluru office; people=Asha, Fatima.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Fatima"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-05\",\"time\":\"09:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Asha\",\"Fatima\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Fatima"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to schedule a meeting on 2027-01-08, starting 16:00. It will be at Conference Room A; participants: Neha, Ravi, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-01-08\",\"time\":\"16:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Neha\",\"Ravi\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-05; time=14:00; place=online; people=Fatima, Liam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-05\",\"time\":\"14:00\",\"location\":\"online\",\"attendees\":[\"Fatima\",\"Liam\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you set up an interview for Liam on 2026-12-02 at 14:00? Location is Kolkata office.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-02\",\"time\":\"14:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Liam\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please arrange a demo for 2026-12-02 at 09:00 at Conference Room A. Invite John, Neha, Priya, Sam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-02\",\"time\":\"09:00\",\"location\":\"Conference Room A\",\"attendees\":[\"John\",\"Neha\",\"Priya\",\"Sam\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2027-01-08 at 14:00 at Kolkata office. Invite Arjun, Asha, John.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-08\",\"time\":\"14:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\",\"Asha\",\"John\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2026-12-02; time=11:00; place=Google Meet; people=Arjun, Fatima, Liam, Ravi.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-02\",\"time\":\"11:00\",\"location\":\"Google Meet\",\"attendees\":[\"Arjun\",\"Fatima\",\"Liam\",\"Ravi\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you schedule a team sync for Fatima, John, Liam, Sam on 2026-12-02 at 09:00? Location is Google Meet.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-02\",\"time\":\"09:00\",\"location\":\"Google Meet\",\"attendees\":[\"Fatima\",\"John\",\"Liam\",\"Sam\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: arrange a demo, 2027-01-08, 09:00, Google Meet, attendees John.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-01-08\",\"time\":\"09:00\",\"location\":\"Google Meet\",\"attendees\":[\"John\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you organise a planning session for Fatima on 2027-02-03 at 15:30? Location is Kolkata office.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "15:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-02-03\",\"time\":\"15:30\",\"location\":\"Kolkata office\",\"attendees\":[\"Fatima\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "15:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: schedule a meeting, 2027-02-03, 16:00, Bengaluru office, attendees Liam, Neha.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-02-03\",\"time\":\"16:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Liam\",\"Neha\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you book a project review for John, Liam, Sam on 2026-12-05 at 13:30? Location is Google Meet.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2026-12-05\",\"time\":\"13:30\",\"location\":\"Google Meet\",\"attendees\":[\"John\",\"Liam\",\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you schedule a meeting for John on 2027-01-08 at 10:30? Location is Google Meet.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-01-08\",\"time\":\"10:30\",\"location\":\"Google Meet\",\"attendees\":[\"John\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please schedule a team sync for 2026-12-02 at 16:00 at Google Meet. Invite Asha, Ravi.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "16:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-02\",\"time\":\"16:00\",\"location\":\"Google Meet\",\"attendees\":[\"Asha\",\"Ravi\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "16:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: book a project review; date=2027-02-12; time=10:30; place=Conference Room A; people=Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-02-12\",\"time\":\"10:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-01-08; time=11:00; place=Zoom; people=Arjun, Asha, Fatima, Ravi.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Fatima",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-01-08\",\"time\":\"11:00\",\"location\":\"Zoom\",\"attendees\":[\"Arjun\",\"Asha\",\"Fatima\",\"Ravi\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Fatima",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-01-08; time=13:30; place=Kolkata office; people=Arjun, John, Priya.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-08",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-01-08\",\"time\":\"13:30\",\"location\":\"Kolkata office\",\"attendees\":[\"Arjun\",\"John\",\"Priya\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-01-08",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-01-15; time=16:00; place=Kolkata office; people=Fatima, Priya.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2027-01-15\",\"time\":\"16:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Fatima\",\"Priya\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to schedule a team sync on 2026-12-05, starting 09:00. It will be at Conference Room A; participants: Arjun, Asha, Liam, Priya.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a team sync\",\"date\":\"2026-12-05\",\"time\":\"09:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"Asha\",\"Liam\",\"Priya\"]}",
+      "parsed": {
+        "action": "schedule a team sync",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to book a project review on 2027-01-08, starting 11:00. It will be at Kolkata office; participants: Ravi, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-01-08\",\"time\":\"11:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Ravi\",\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please schedule a meeting for 2027-01-08 at 15:30 at Bengaluru office. Invite Arjun, Asha, Neha, Ravi.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "15:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2027-01-08\",\"time\":\"15:30\",\"location\":\"Bengaluru office\",\"attendees\":[\"Arjun\",\"Asha\",\"Neha\",\"Ravi\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "15:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: arrange a demo, 2027-01-15, 14:00, Bengaluru office, attendees Asha, Priya, Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-01-15\",\"time\":\"14:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Asha\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you set up an interview for Arjun, Asha, John, Ravi on 2027-02-12 at 09:00? Location is Bengaluru office.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-02-12\",\"time\":\"09:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Arjun\",\"Asha\",\"John\",\"Ravi\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please book a project review for 2027-02-03 at 14:00 at Google Meet. Invite Asha, Fatima, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"book a project review\",\"date\":\"2027-02-03\",\"time\":\"14:00\",\"location\":\"Google Meet\",\"attendees\":[\"Asha\",\"Fatima\",\"Sam\"]}",
+      "parsed": {
+        "action": "book a project review",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: organise a planning session, 2026-12-18, 16:00, Conference Room A, attendees Asha, Sam.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Sam"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-18\",\"time\":\"16:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Asha\",\"Sam\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Sam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2027-02-03, 16:00, Kolkata office, attendees Ravi.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-02-03\",\"time\":\"16:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Ravi\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you set up an interview for Fatima, Neha, Priya, Ravi on 2027-01-15 at 16:00? Location is online.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-01-15\",\"time\":\"16:00\",\"location\":\"online\",\"attendees\":[\"Fatima\",\"Neha\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2027-01-08, 10:30, Google Meet, attendees John, Priya, Ravi.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2027-01-08\",\"time\":\"10:30\",\"location\":\"Google Meet\",\"attendees\":[\"John\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-18; time=14:00; place=Bengaluru office; people=Liam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-18\",\"time\":\"14:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Liam\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2027-01-15; time=15:30; place=Conference Room A; people=Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-01-15\",\"time\":\"15:30\",\"location\":\"Conference Room A\",\"attendees\":[\"Ravi\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please organise a planning session for 2026-12-18 at 16:00 at Conference Room A. Invite Arjun, Liam.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-18\",\"time\":\"16:00\",\"location\":\"Conference Room A\",\"attendees\":[\"Arjun\",\"Liam\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Can you set up an interview for Arjun, Fatima, John on 2026-12-02 at 13:30? Location is Google Meet.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "John"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-02\",\"time\":\"13:30\",\"location\":\"Google Meet\",\"attendees\":[\"Arjun\",\"Fatima\",\"John\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "John"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: schedule a meeting; date=2026-12-05; time=11:00; place=online; people=Arjun, Mina, Ravi.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-05\",\"time\":\"11:00\",\"location\":\"online\",\"attendees\":[\"Arjun\",\"Mina\",\"Ravi\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to arrange a demo on 2027-01-15, starting 16:00. It will be at Bengaluru office; participants: John, Mina.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John",
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2027-01-15\",\"time\":\"16:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"John\",\"Mina\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John",
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Set the following calendar details: organise a planning session, 2026-12-02, 10:30, Google Meet, attendees Mina.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "{\"action\":\"organise a planning session\",\"date\":\"2026-12-02\",\"time\":\"10:30\",\"location\":\"Google Meet\",\"attendees\":[\"Mina\"]}",
+      "parsed": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-18; time=09:00; place=online; people=Asha, Priya.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-18",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Asha",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"set up an interview\",\"date\":\"2026-12-18\",\"time\":\"09:00\",\"location\":\"online\",\"attendees\":[\"Asha\",\"Priya\"]}",
+      "parsed": {
+        "action": "set up an interview",
+        "date": "2026-12-18",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Asha",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to schedule a meeting on 2026-12-18, starting 14:00. It will be at Kolkata office; participants: Liam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "{\"action\":\"schedule a meeting\",\"date\":\"2026-12-18\",\"time\":\"14:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Liam\"]}",
+      "parsed": {
+        "action": "schedule a meeting",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to arrange a demo on 2026-12-05, starting 09:00. It will be at online; participants: Arjun, Fatima, Liam, Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-05\",\"time\":\"09:00\",\"location\":\"online\",\"attendees\":[\"Arjun\",\"Fatima\",\"Liam\",\"Ravi\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "Please arrange a demo for 2026-12-18 at 16:00 at Kolkata office. Invite Liam, Neha, Priya, Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-18\",\"time\":\"16:00\",\"location\":\"Kolkata office\",\"attendees\":[\"Liam\",\"Neha\",\"Priya\",\"Ravi\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": true
+    },
+    {
+      "request": "I need to arrange a demo on 2026-12-18, starting 11:00. It will be at Bengaluru office; participants: Arjun, Asha, Priya.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Priya"
+        ]
+      },
+      "raw_output": "{\"action\":\"arrange a demo\",\"date\":\"2026-12-18\",\"time\":\"11:00\",\"location\":\"Bengaluru office\",\"attendees\":[\"Arjun\",\"Asha\",\"Priya\"]}",
+      "parsed": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Priya"
+        ]
+      },
+      "exact_match": true
+    }
+  ]
+}

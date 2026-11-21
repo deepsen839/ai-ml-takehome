@@ -1,0 +1,10 @@
+# Kaggle GPU images normally provide torch, CUDA, transformers, peft and bitsandbytes.
+# Do not pip-install this file blindly: it can downgrade or replace Kaggle's CUDA stack.
+# Install only a missing package after checking imports in the notebook:
+#   %pip install -q pymupdf sentence-transformers
+# Optional FAISS acceleration (the code has a NumPy exact-search fallback):
+#   %pip install -q faiss-cpu
+# Expected runtime libraries: torch, transformers, peft, accelerate, bitsandbytes,
+# sentence-transformers, pymupdf, numpy, pandas.
+
+# See README.md; do not reinstall Kaggle's torch/CUDA stack blindly.

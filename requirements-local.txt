@@ -1,0 +1,10 @@
+# Install PyTorch separately from https://pytorch.org/get-started/locally/
+transformers>=4.45
+peft>=0.13
+accelerate>=1.0
+bitsandbytes>=0.44
+sentence-transformers>=3.0
+pymupdf>=1.24
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4

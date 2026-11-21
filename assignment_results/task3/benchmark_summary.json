@@ -1,0 +1,18 @@
+[
+  {
+    "mode": "fp16",
+    "total_generated_tokens": 1175,
+    "total_generation_seconds": 46.39099530800013,
+    "aggregate_tokens_per_second": 25.328191218983637,
+    "peak_gpu_allocated_gb": 0.7391376495361328,
+    "peak_gpu_reserved_gb": 0.759765625
+  },
+  {
+    "mode": "4bit_nf4",
+    "total_generated_tokens": 1190,
+    "total_generation_seconds": 55.18763105300013,
+    "aggregate_tokens_per_second": 21.56280270224262,
+    "peak_gpu_allocated_gb": 0.4454836845397949,
+    "peak_gpu_reserved_gb": 0.462890625
+  }
+]

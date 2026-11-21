@@ -1,0 +1,219 @@
+{
+  "chunk_words": 150,
+  "recall_at_5": 0.13333333333333333,
+  "hits": 2,
+  "total": 15,
+  "search_backend": "NumPy exact inner-product search",
+  "rows": [
+    {
+      "question": "What are the four functions in the NIST AI Risk Management Framework?",
+      "gold_page": 5,
+      "gold_passage": "NIST AI 100-1 AI RMF 1.0 List of Figures Fig. 1 Examples of potential harms related to AI systems. Trustworthy AI systems and their responsible use can mitigate negative risks and contribute to bene- fits for people, organizations, and ecosystems. 5 Fig. 2 Lifecycle and Key Dimensions of an AI System. Modified from OECD (2022) OECD Framework for the Classification of AI systems \u2014 OECD Digital Economy Papers. The two inner circles show AI systems\u2019 key di- mensions and the outer circle shows AI lifecycle stages. Ideally, risk man- agement efforts start with the Plan and Design function in the application context and are performed throughout the AI system lifecycle. See Figure 3 for representative AI actors. 10 Fig. 3 AI actors across AI lifecycle stages. See Appendix A for detailed descrip- tions of AI actor tasks, including details about testing, evaluation, verifica- tion, and validation tasks. Note that AI actors in the AI Model dimension (Figure 2) are separated as a best practice, with those building and using the models separated from those verifying and validating the models. 11 Fig. 4 Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthi- ness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics. 12 Fig. 5 Functions organize AI risk management activities at their highest level to govern, map, measure, and manage AI risks. Governance is designed to be a cross-cutting function to inform and be infused throughout the other three functions. 20 Page ii",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        25,
+        37,
+        8,
+        1,
+        2
+      ],
+      "top1_passage": "NIST AI 100-1 AI RMF 1.0 Part 2: Core and Profiles 5. AI RMF Core The AI RMF Core provides outcomes and actions that enable dialogue, understanding, and activities to manage AI risks and responsibly develop trustworthy AI systems. As illus- trated in Figure 5, the Core is composed of four functions: GOVERN, MAP, MEASURE, and MANAGE. Each of these high-level functions is broken down into categories and sub- categories. Categories and subcategories are subdivided into specific actions and outcomes. Actions do not constitute a checklist, nor are they necessarily an ordered set of steps. Fig. 5. Functions organize AI risk management activities at their highest level to govern, map, measure, and manage AI risks. Governance is designed to be a cross-cutting function to inform and be infused throughout the other three functions. Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions. AI RMF Core"
+    },
+    {
+      "question": "What is the purpose of the Govern function?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        5,
+        27,
+        26,
+        29,
+        27
+      ],
+      "top1_passage": "all other characteristics. 12 Fig. 5 Functions organize AI risk management activities at their highest level to govern, map, measure, and manage AI risks. Governance is designed to be a cross-cutting function to inform and be infused throughout the other three functions. 20 Page ii"
+    },
+    {
+      "question": "What does the Map function establish about an AI system?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        30,
+        46,
+        29,
+        31,
+        29
+      ],
+      "top1_passage": "or deploy an AI system. If a decision is made to proceed, organizations should utilize the MEASURE and MANAGE functions along with policies and procedures put into place in the GOVERN function to assist in AI risk management efforts. It is incum- bent on Framework users to continue applying the MAP function to AI systems as context, capabilities, risks, benefits, and potential impacts evolve over time. Practices related to mapping AI risks are described in the NIST AI RMF Playbook. Table 2 lists the MAP function\u2019s categories and subcategories. Page 25"
+    },
+    {
+      "question": "What is the purpose of measuring AI risks?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        9,
+        33,
+        10,
+        10,
+        11
+      ],
+      "top1_passage": "are not easily foreseeable and applications are evolving. While some AI risks and benefits are well-known, it can be challenging to assess negative impacts and the degree of harms. Figure 1 provides examples of potential harms that can be related to AI systems. AI risk management efforts should consider that humans may assume that AI systems work \u2013 and work well \u2013 in all settings. For example, whether correct or not, AI systems are often perceived as being more objective than humans or as offering greater capabilities than general software. Page 4"
+    },
+    {
+      "question": "What does the Manage function focus on?",
+      "gold_page": 1,
+      "gold_passage": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        26,
+        5,
+        37,
+        4,
+        26
+      ],
+      "top1_passage": "MEASURE or MANAGE. However users integrate the functions, the process should be iterative, with cross-referencing between functions as necessary. Simi- larly, there are categories and subcategories with elements that apply to multiple functions, or that logically should take place before certain subcategory decisions. 5.1 Govern The GOVERN function: \u2022 cultivates and implements a culture of risk management within organizations design- ing, developing, deploying, evaluating, or acquiring AI systems; \u2022 outlines processes, documents, and organizational schemes that anticipate, identify, and manage the risks a system can pose, including to users and others across society \u2013 and procedures to achieve those outcomes; \u2022 incorporates processes to assess potential impacts; \u2022 provides a structure by which AI risk management functions can align with organi- zational principles, policies, and strategic priorities; \u2022 connects technical aspects of AI system design and development to organizational values and principles, and enables organizational practices and competencies for the"
+    },
+    {
+      "question": "What does trustworthy AI mean in the framework?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        17,
+        18,
+        17,
+        7,
+        18
+      ],
+      "top1_passage": "NIST AI 100-1 AI RMF 1.0 3. AI Risks and Trustworthiness For AI systems to be trustworthy, they often need to be responsive to a multiplicity of cri- teria that are of value to interested parties. Approaches which enhance AI trustworthiness can reduce negative AI risks. This Framework articulates the following characteristics of trustworthy AI and offers guidance for addressing them. Characteristics of trustworthy AI systems include: valid and reliable, safe, secure and resilient, accountable and trans- parent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed. Creating trustworthy AI requires balancing each of these characteristics based on the AI system\u2019s context of use. While all characteristics are socio-technical system at- tributes, accountability and transparency also relate to the processes and activities internal to an AI system and its external setting. Neglecting these characteristics can increase the probability and magnitude of negative consequences. Fig. 4. Characteristics of trustworthy AI"
+    },
+    {
+      "question": "Which characteristic concerns resilience to unexpected events?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        20,
+        20,
+        9,
+        9,
+        20
+      ],
+      "top1_passage": "the ecosystems in which they are deployed, may be said to be re- silient if they can withstand unexpected adverse events or unexpected changes in their envi- ronment or use \u2013 or if they can maintain their functions and structure in the face of internal and external change and degrade safely and gracefully when this is necessary (Adapted from: ISO/IEC TS 5723:2022). Common security concerns relate to adversarial examples, data poisoning, and the exfiltration of models, training data, or other intellectual property through AI system endpoints. AI systems that can maintain confidentiality, integrity, and availability through protection mechanisms that prevent unauthorized access and use may be said to be secure. Guidelines in the NIST Cybersecurity Framework and Risk Manage- ment Framework are among those which are applicable here. Security and resilience are related but distinct characteristics. While resilience is the abil- ity to return to normal function after an unexpected"
+    },
+    {
+      "question": "What is meant by explainable and interpretable AI?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        21,
+        21,
+        22,
+        6,
+        6
+      ],
+      "top1_passage": "of the system, including its out- puts. The underlying assumption is that perceptions of negative risk stem from a lack of ability to make sense of, or contextualize, system output appropriately. Explainable and interpretable AI systems offer information that will help end users understand the purposes and potential impact of an AI system. Risk from lack of explainability may be managed by describing how AI systems function, with descriptions tailored to individual differences such as the user\u2019s role, knowledge, and skill level. Explainable systems can be debugged and monitored more easily, and they lend themselves to more thorough documentation, audit, and governance. Page 16"
+    },
+    {
+      "question": "Why is transparency important for AI systems?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        20,
+        21,
+        17,
+        21,
+        22
+      ],
+      "top1_passage": "and its outputs is available to individuals interacting with such a system \u2013 regardless of whether they are even aware that they are doing so. Meaningful transparency provides access to appropriate levels of information based on the stage of the AI lifecycle and tailored to the role or knowledge of AI actors or individuals interacting with or using the AI system. By promoting higher levels of understanding, transparency increases confidence in the AI system. This characteristic\u2019s scope spans from design decisions and training data to model train- ing, the structure of the model, its intended use cases, and how and when deployment, post-deployment, or end user decisions were made and by whom. Transparency is often necessary for actionable redress related to AI system outputs that are incorrect or otherwise lead to negative impacts. Transparency should consider human-AI interaction: for exam- Page 15"
+    },
+    {
+      "question": "What does accountability mean in AI risk management?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        6,
+        21,
+        28,
+        5,
+        47
+      ],
+      "top1_passage": "orga- nizations and within society. Without proper controls, AI systems can amplify, perpetuate, or exacerbate inequitable or undesirable outcomes for individuals and communities. With proper controls, AI systems can mitigate and manage inequitable outcomes. AI risk management is a key component of responsible development and use of AI sys- tems. Responsible AI practices can help align the decisions about AI system design, de- velopment, and uses with intended aim and values. Core concepts in responsible AI em- phasize human centricity, social responsibility, and sustainability. AI risk management can drive responsible uses and practices by prompting organizations and their internal teams who design, develop, and deploy AI to think more critically about context and potential or unexpected negative and positive impacts. Understanding and managing the risks of AI systems will help to enhance trustworthiness, and in turn, cultivate public trust. Page 1"
+    },
+    {
+      "question": "What is the role of human-AI interaction?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        45,
+        45,
+        29,
+        6,
+        42
+      ],
+      "top1_passage": "makers, and policy makers and may lead to negative impacts. 3. Human-AI interaction results vary. Under certain conditions \u2013 for example, in perceptual-based judgment tasks \u2013 the AI part of the human-AI interaction can am- plify human biases, leading to more biased decisions than the AI or human alone. When these variations are judiciously taken into account in organizing human-AI teams, however, they can result in complementarity and improved overall perfor- mance. Page 40"
+    },
+    {
+      "question": "How does the framework describe harmful bias?",
+      "gold_page": 4,
+      "gold_passage": "Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpretable 16 3.6 Privacy-Enhanced 17 3.7 Fair \u2013 with Harmful Bias Managed 17 4 Effectiveness of the AI RMF 19 Part 2: Core and Profiles 20 5 AI RMF Core 20 5.1 Govern 21 5.2 Map 24 5.3 Measure 28 5.4 Manage 31 6 AI RMF Profiles 33 Appendix A: Descriptions of AI Actor Tasks from Figures 2 and 3 35 Appendix B: How AI Risks Differ from Traditional Software Risks 38 Appendix C: AI Risk Management and Human-AI Interaction 40 Appendix D: Attributes of the AI RMF 42 List of Tables Table 1 Categories and subcategories for the GOVERN function. 22 Table 2 Categories and subcategories for the MAP function. 26 Table 3 Categories and subcategories for the MEASURE function. 29 Table 4 Categories and subcategories for the MANAGE function. 32 i",
+      "recall_at_5_hit": true,
+      "top5_pages": [
+        22,
+        23,
+        23,
+        4,
+        22
+      ],
+      "top1_passage": "define be- cause perceptions of fairness differ among cultures and may shift depending on application. Organizations\u2019 risk management efforts will be enhanced by recognizing and considering these differences. Systems in which harmful biases are mitigated are not necessarily fair. For example, systems in which predictions are somewhat balanced across demographic groups may still be inaccessible to individuals with disabilities or affected by the digital divide or may exacerbate existing disparities or systemic biases. Page 17"
+    },
+    {
+      "question": "What is an AI actor?",
+      "gold_page": 5,
+      "gold_passage": "NIST AI 100-1 AI RMF 1.0 List of Figures Fig. 1 Examples of potential harms related to AI systems. Trustworthy AI systems and their responsible use can mitigate negative risks and contribute to bene- fits for people, organizations, and ecosystems. 5 Fig. 2 Lifecycle and Key Dimensions of an AI System. Modified from OECD (2022) OECD Framework for the Classification of AI systems \u2014 OECD Digital Economy Papers. The two inner circles show AI systems\u2019 key di- mensions and the outer circle shows AI lifecycle stages. Ideally, risk man- agement efforts start with the Plan and Design function in the application context and are performed throughout the AI system lifecycle. See Figure 3 for representative AI actors. 10 Fig. 3 AI actors across AI lifecycle stages. See Appendix A for detailed descrip- tions of AI actor tasks, including details about testing, evaluation, verifica- tion, and validation tasks. Note that AI actors in the AI Model dimension (Figure 2) are separated as a best practice, with those building and using the models separated from those verifying and validating the models. 11 Fig. 4 Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthi- ness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics. 12 Fig. 5 Functions organize AI risk management activities at their highest level to govern, map, measure, and manage AI risks. Governance is designed to be a cross-cutting function to inform and be infused throughout the other three functions. 20 Page ii",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        42,
+        16,
+        40,
+        14,
+        7
+      ],
+      "top1_passage": "actors may provide formal or quasi-formal norms or guidance for specifying and managing AI risks. They can include trade associations, standards developing or- ganizations, advocacy groups, researchers, environmental groups, and civil society organizations. The general public is most likely to directly experience positive and negative impacts of AI technologies. They may provide the motivation for actions taken by the AI actors. This group can include individuals, communities, and consumers associated with the context in which an AI system is developed or deployed. Page 37"
+    },
+    {
+      "question": "What is the purpose of the AI RMF Playbook?",
+      "gold_page": 3,
+      "gold_passage": "Certain commercial entities, equipment, or materials may be identified in this document in order to describe an experimental procedure or concept adequately. Such identification is not intended to imply recommenda- tion or endorsement by the National Institute of Standards and Technology, nor is it intended to imply that the entities, materials, or equipment are necessarily the best available for the purpose. This publication is available free of charge from: https://doi.org/10.6028/NIST.AI.100-1 Update Schedule and Versions The Artificial Intelligence Risk Management Framework (AI RMF) is intended to be a living document. NIST will review the content and usefulness of the Framework regularly to determine if an update is appro- priate; a review with formal input from the AI community is expected to take place no later than 2028. The Framework will employ a two-number versioning system to track and identify major and minor changes. The first number will represent the generation of the AI RMF and its companion documents (e.g., 1.0) and will change only with major revisions. Minor revisions will be tracked using \u201c.n\u201d after the generation number (e.g., 1.1). All changes will be tracked using a Version Control Table which identifies the history, including version number, date of change, and description of change. NIST plans to update the AI RMF Playbook frequently. Comments on the AI RMF Playbook may be sent via email to AIframework@nist.gov at any time and will be reviewed and integrated on a semi-annual basis.",
+      "recall_at_5_hit": false,
+      "top5_pages": [
+        26,
+        26,
+        47,
+        8,
+        7
+      ],
+      "top1_passage": "NIST AI 100-1 AI RMF 1.0 deployed, or evaluated \u2013 which can create opportunities to surface problems and identify existing and emergent risks. An online companion resource to the AI RMF, the NIST AI RMF Playbook, is available to help organizations navigate the AI RMF and achieve its outcomes through suggested tactical actions they can apply within their own contexts. Like the AI RMF, the Playbook is voluntary and organizations can utilize the suggestions according to their needs and interests. Playbook users can create tailored guidance selected from suggested material for their own use and contribute their suggestions for sharing with the broader community. Along with the AI RMF, the Playbook is part of the NIST Trustworthy and Responsible AI Resource Center. Framework users may apply these functions as best suits their needs for managing AI risks based on their resources and capabilities. Some organizations may choose to select from"
+    },
+    {
+      "question": "How should organizations use the AI RMF?",
+      "gold_page": 7,
+      "gold_passage": "NIST AI 100-1 AI RMF 1.0 Social responsibility can refer to the organization\u2019s responsibility \u201cfor the impacts of its decisions and activities on society and the environment through transparent and ethical behavior\u201d (ISO 26000:2010). Sustainability refers to the \u201cstate of the global system, including environmental, social, and economic aspects, in which the needs of the present are met without compromising the ability of future generations to meet their own needs\u201d (ISO/IEC TR 24368:2022). Responsible AI is meant to result in technology that is also equitable and accountable. The expectation is that organizational practices are carried out in accord with \u201cprofessional responsibility,\u201d defined by ISO as an approach that \u201caims to ensure that professionals who design, develop, or deploy AI systems and applications or AI-based products or systems, recognize their unique position to exert influence on people, society, and the future of AI\u201d (ISO/IEC TR 24368:2022). As directed by the National Artificial Intelligence Initiative Act of 2020 (P.L. 116-283), the goal of the AI RMF is to offer a resource to the organizations designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustwor- thy and responsible development and use of AI systems. The Framework is intended to be voluntary, rights-preserving, non-sector-specific, and use-case agnostic, providing flexibil- ity to organizations of all sizes and in all sectors and throughout society to implement the approaches in the Framework. The Framework is designed to equip organizations and individuals \u2013 referred to here as AI actors \u2013 with approaches that increase the trustworthiness of AI systems, and to help foster the responsible design, development, deployment, and use of AI systems ",
+      "recall_at_5_hit": true,
+      "top5_pages": [
+        7,
+        47,
+        47,
+        8,
+        25
+      ],
+      "top1_passage": "ensure that professionals who design, develop, or deploy AI systems and applications or AI-based products or systems, recognize their unique position to exert influence on people, society, and the future of AI\u201d (ISO/IEC TR 24368:2022). As directed by the National Artificial Intelligence Initiative Act of 2020 (P.L. 116-283), the goal of the AI RMF is to offer a resource to the organizations designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustwor- thy and responsible development and use of AI systems. The Framework is intended to be voluntary, rights-preserving, non-sector-specific, and use-case agnostic, providing flexibil- ity to organizations of all sizes and in all sectors and throughout society to implement the approaches in the Framework. The Framework is designed to equip organizations and individuals \u2013 referred to here as AI actors \u2013 with approaches that increase the trustworthiness of AI systems, and"
+    }
+  ]
+}

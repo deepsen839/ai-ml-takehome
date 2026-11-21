@@ -1,0 +1,2536 @@
+{
+  "model": "base",
+  "examples": 100,
+  "valid_json_rate": 1.0,
+  "exact_match_accuracy": 0.0,
+  "predictions": [
+    {
+      "request": "Can you arrange a demo for John, Neha, Priya, Ravi on 2026-12-18 at 09:00? Location is Google Meet.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"John\", \"Neha\", \"Priya\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18T09:00:00Z\",\n  \"",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-18T09:00:00Z",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2027-01-15 at 14:00 at online. Invite Fatima, Neha, Ravi, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book_project_review\",\n  \"date\": \"2027-01-15T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Fatima\", \"Neha\", \"Ravi\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "book_project_review",
+        "date": "2027-01-15T14:00:00Z",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please schedule a team sync for 2027-01-08 at 09:00 at Zoom. Invite Asha.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Zoom",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-08T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Asha\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-01-08T09:00:00Z",
+        "time": "09:00",
+        "location": "Zoom",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to organise a planning session on 2027-01-15, starting 10:30. It will be at Google Meet; participants: Priya.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"10:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Priya\"]\n}\n```\n\nI understand that you want me to create a JSON object based on the provided request. However, there seems to be an error in your JSON structure. The `attendees` key should contain an array of strings instead of just `\"Priya\"`. Here's the corrected JSON:\n\n```json\n{\n ",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-02-03; time=13:30; place=Bengaluru office; people=John.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-02-03T13:30:00Z\",\n  \"time\": \"13:30\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"John\"]\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-02-03T13:30:00Z",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please set up an interview for 2027-01-08 at 10:30 at Zoom. Invite Asha, Liam, Priya.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up_interview\",\n  \"date\": \"2027-01-08\",\n  \"time\": \"10:30\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Asha\", \"Liam\", \"Priya\"]\n}\n```\n\n**Note:** The provided solution is a complete and correct implementation of the `convert_calendar_requests_to_json` function as per the guidelines. It converts the given request into a JSON object without adding any additional markdown content. If you need to modify or extend this solution",
+      "parsed": {
+        "action": "set_up_interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2027-02-12 at 15:30 at Conference Room A. Invite Mina, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-02-12T15:30:00Z\",\n  \"time\": \"15:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Mina\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "book",
+        "date": "2027-02-12T15:30:00Z",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you book a project review for Arjun, Asha on 2026-12-11 at 11:00? Location is Bengaluru office.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"BOOK_PROJECT_REVIEW\",\n  \"date\": \"2026-12-11T11:00:00\",\n  \"time\": \"11:00\",\n  \"location\": \"Bengaluru office\"\n}\n```",
+      "parsed": {
+        "action": "BOOK_PROJECT_REVIEW",
+        "date": "2026-12-11T11:00:00",
+        "time": "11:00",
+        "location": "Bengaluru office"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please arrange a demo for 2026-12-02 at 10:30 at Conference Room A. Invite Mina.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"10:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Mina\"]\n}\n```\n\n**Expected Output:** \n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"10:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"M",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to organise a planning session on 2026-12-18, starting 13:30. It will be at online; participants: Arjun.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "13:30",
+        "location": "online",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"13:30\",\n  \"location\": \"online\",\n  \"attendees\": [\"Arjun\"]\n}\n```\n\nI understand that you want me to create a JSON object based on the provided request. However, there seems to be an error in your JSON structure. The `attendees` key should contain an array of strings instead of just `\"Arjun\"`. Here's the corrected JSON:\n\n```json\n{\n  \"",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-18",
+        "time": "13:30",
+        "location": "online",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to set up an interview on 2026-12-05, starting 09:00. It will be at Google Meet; participants: Fatima, John, Mina.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up_interview\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Fatima\", \"John\", \"Mina\"]\n}\n```\n\nI converted the request into a JSON object as per your requirements. Here's the detailed breakdown:\n\n- **Action**: `set_up_interview`\n- **Date**: `2026-12-05`\n- **Time**: `09",
+      "parsed": {
+        "action": "set_up_interview",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: schedule a meeting, 2026-12-05, 11:00, Kolkata office, attendees Arjun, Liam, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"11:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\", \"Liam\", \"Sam\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"11:00",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2027-02-12; time=11:00; place=Conference Room A; people=Asha, Fatima, Priya, Sam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "11:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"11:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Asha\", \"Fatima\", \"Priya\", \"Sam\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"11:00\",\n  \"location\": \"Conference Room A\",\n  \"",
+      "parsed": {
+        "action": "arrange",
+        "date": "2027-02-12",
+        "time": "11:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you organise a planning session for Mina on 2027-02-12 at 09:00? Location is Conference Room A.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-02-12T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Conference Room A\"\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-02-12T09:00:00Z",
+        "time": "09:00",
+        "location": "Conference Room A"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: book a project review, 2026-12-11, 11:00, Bengaluru office, attendees John.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"11:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"John\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"11:00\",\n  \"location\": \"",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you schedule a team sync for John on 2027-02-03 at 11:00? Location is Zoom.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-02-03",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-02-03T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"John\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-02-03T11:00:00Z",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: schedule a team sync; date=2026-12-05; time=11:00; place=Kolkata office; people=Fatima, Mina, Priya, Sam.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-05T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Fatima\", \"Mina\", \"Priya\", \"Sam\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-05T11:00:00Z",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: arrange a demo, 2027-02-03, 14:00, Bengaluru office, attendees Asha, John, Priya.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "John",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"14:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Asha\", \"John\", \"Priya\"]\n}\n``` ```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"14:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees",
+      "parsed": {
+        "action": "set",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "John",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you organise a planning session for Neha on 2026-12-18 at 16:00? Location is online.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "online",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-18T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"online\"\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-18T16:00:00Z",
+        "time": "16:00",
+        "location": "online"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to organise a planning session on 2026-12-18, starting 11:00. It will be at Google Meet; participants: Arjun.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-18T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Arjun\"]\n}\n```\n\nI need to organise a planning session on 2026-12-18, starting 11:00. It will be at Google Meet; participants: Arjun. JSON:\n\n```json\n{\n  \"action\": \"",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-18T11:00:00Z",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-11; time=14:00; place=Conference Room A; people=Arjun, Priya.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set up\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"14:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Arjun\", \"Priya\"]\n}\n```\n\nI have converted the given request into a valid JSON object as per your requirements. The JSON includes all the necessary fields for setting up an interview with the specified details such as date, time, location, and attendees. Here is the complete JSON:\n\n```json\n{\n  \"action",
+      "parsed": {
+        "action": "set up",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: schedule a meeting; date=2027-01-15; time=09:00; place=Bengaluru office; people=John.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-15T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"John\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-01-15T09:00:00Z",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please organise a planning session for 2026-12-05 at 09:00 at Bengaluru office. Invite Asha, Neha, Sam.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Asha\", \"Neha\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please schedule a meeting for 2027-01-15 at 10:30 at Conference Room A. Invite Fatima, Liam, Mina.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-15T10:30:00Z\",\n  \"time\": \"10:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Fatima\", \"Liam\", \"Mina\"]\n}\n``` The JSON response is correct and does not include any markdown formatting. Here it is:\n\n```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-15T",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-01-15T10:30:00Z",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: schedule a team sync; date=2027-01-15; time=10:30; place=Kolkata office; people=Neha, Ravi.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-01-15",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-15T10:30:00Z\",\n  \"time\": \"10:30\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Neha\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"10:30\",\n  \"location\": \"Kolkata office",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-01-15T10:30:00Z",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you book a project review for Liam, Neha on 2026-12-02 at 13:30? Location is Conference Room A.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-02",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"BOOK_PROJECT_REVIEW\",\n  \"date\": \"2026-12-02T13:30:00Z\",\n  \"time\": \"13:30\",\n  \"location\": \"Conference Room A\"\n}\n```",
+      "parsed": {
+        "action": "BOOK_PROJECT_REVIEW",
+        "date": "2026-12-02T13:30:00Z",
+        "time": "13:30",
+        "location": "Conference Room A"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: schedule a meeting, 2027-01-15, 11:00, online, attendees Mina, Neha, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-15",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"11:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Mina\", \"Neha\", \"Sam\"]\n}\n``` To convert the given request into a JSON object, I will follow these steps:\n\n1. Extract the key-value pairs from the JSON string.\n2. Create an empty dictionary to store the result.\n3. Add each key-value pair to the dictionary in the required order.\n\nHere's",
+      "parsed": {
+        "action": "set",
+        "date": "2027-01-15",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2027-01-08 at 11:00 at Zoom. Invite Fatima, John, Mina, Priya.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-01-08T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Fatima\", \"John\", \"Mina\", \"Priya\"]\n}\n```",
+      "parsed": {
+        "action": "book",
+        "date": "2027-01-08T11:00:00Z",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you arrange a demo for Mina, Neha, Priya, Ravi on 2027-02-12 at 14:00? Location is Zoom.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "14:00",
+        "location": "Zoom",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-02-12T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Mina\", \"Neha\", \"Priya\", \"Ravi\"]\n}\n```",
+      "parsed": {
+        "action": "arrange",
+        "date": "2027-02-12T14:00:00Z",
+        "time": "14:00",
+        "location": "Zoom",
+        "attendees": [
+          "Mina",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you schedule a team sync for Arjun, Neha, Sam on 2026-12-18 at 14:00? Location is Kolkata office.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-18T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\", \"Neha\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-18T14:00:00Z",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please set up an interview for 2027-02-03 at 13:30 at Google Meet. Invite Neha.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up_interview\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"13:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Neha\"]\n}\n```\n\nWhat is the purpose of the `set_up_interview` action in this request? The purpose of the `set_up_interview` action in this request is to set up an interview for a specific date and time.\n\nWho should be invited to the interview according to the `attendees`",
+      "parsed": {
+        "action": "set_up_interview",
+        "date": "2027-02-03",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2027-01-15 at 16:00 at Zoom. Invite Fatima, Mina, Priya.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book_project_review\",\n  \"date\": \"2027-01-15T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Fatima\", \"Mina\", \"Priya\"]\n}\n```",
+      "parsed": {
+        "action": "book_project_review",
+        "date": "2027-01-15T16:00:00Z",
+        "time": "16:00",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2026-12-11, 13:30, Kolkata office, attendees Arjun.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"13:30\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\"]\n}\n``` The request has been successfully converted to a JSON object as per your requirements. Here is the JSON representation:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"13:30\",\n  \"location",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-11",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-02; time=09:00; place=Google Meet; people=Liam, Ravi, Sam.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Liam",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set up\",\n  \"date\": \"2026-12-02T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Liam\", \"Ravi\", \"Sam\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-02T09:00:00Z\",\n  \"time\": \"09",
+      "parsed": {
+        "action": "set up",
+        "date": "2026-12-02T09:00:00Z",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Liam",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: organise a planning session, 2027-02-12, 15:30, Conference Room A, attendees Ravi.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"15:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Ravi\"]\n}\n``` To convert the given request into a JSON object, we need to include all the required fields and ensure that the data is formatted correctly. Here's the step-by-step process:\n\n1. **Action**: `set`\n2. **Date**: `2027-02-12`\n3.",
+      "parsed": {
+        "action": "set",
+        "date": "2027-02-12",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to schedule a team sync on 2026-12-02, starting 15:30. It will be at Zoom; participants: Arjun, Fatima.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "15:30",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Fatima"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-02T15:30:00Z\",\n  \"time\": \"15:30\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Arjun\", \"Fatima\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-02T15:30:00Z",
+        "time": "15:30",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Fatima"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2026-12-11 at 11:00 at Kolkata office. Invite Arjun, Asha, John.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book_project_review\",\n  \"date\": \"2026-12-11T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\", \"Asha\", \"John\"]\n}\n```",
+      "parsed": {
+        "action": "book_project_review",
+        "date": "2026-12-11T11:00:00Z",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please schedule a meeting for 2026-12-02 at 10:30 at online. Invite Fatima.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "online",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-02T10:30:00Z\",\n  \"time\": \"10:30\",\n  \"location\": \"online\",\n  \"attendees\": [\"Fatima\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-02T10:30:00Z",
+        "time": "10:30",
+        "location": "online",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you book a project review for Fatima on 2027-01-08 at 09:00? Location is Bengaluru office.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"BOOK_PROJECT_REVIEW\",\n  \"date\": \"2027-01-08T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Bengaluru office\"\n}\n```",
+      "parsed": {
+        "action": "BOOK_PROJECT_REVIEW",
+        "date": "2027-01-08T09:00:00Z",
+        "time": "09:00",
+        "location": "Bengaluru office"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2026-12-02, 09:00, Conference Room A, attendees Arjun, John, Mina, Neha.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n    \"action\": \"set\",\n    \"date\": \"2026-12-02\",\n    \"time\": \"09:00\",\n    \"location\": \"Conference Room A\",\n    \"attendees\": [\"Arjun\", \"John\", \"Mina\", \"Neha\"]\n}\n``` ```json\n{\n    \"action\": \"set\",\n    \"date\": \"2026-12-02\",\n    \"time\": \"09:00\",\n    \"location\": \"Conference Room A\",\n    \"attend",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to arrange a demo on 2027-02-12, starting 16:00. It will be at Kolkata office; participants: Neha.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-02-12",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-02-12T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Neha\"]\n}\n``` The request has been successfully converted into the required JSON format. Here is the JSON representation of the request:\n\n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-02-12T1",
+      "parsed": {
+        "action": "arrange",
+        "date": "2027-02-12T16:00:00Z",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Neha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: schedule a team sync, 2026-12-02, 10:30, Zoom, attendees Fatima, Mina.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"10:30\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\n    {\n      \"name\": \"Fatima\"\n    },\n    {\n      \"name\": \"Mina\"\n    }\n  ]\n}\n``` The JSON response for the given request is:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          {
+            "name": "Fatima"
+          },
+          {
+            "name": "Mina"
+          }
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: book a project review; date=2027-02-12; time=13:30; place=Conference Room A; people=Arjun, Ravi, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-02-12T13:30:00Z\",\n  \"time\": \"13:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Arjun\", \"Ravi\", \"Sam\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-02-12T",
+      "parsed": {
+        "action": "book",
+        "date": "2027-02-12T13:30:00Z",
+        "time": "13:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2027-02-03; time=15:30; place=Google Meet; people=Asha, Liam, Mina, Neha.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "15:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set up\",\n  \"date\": \"2027-02-03T15:30:00Z\",\n  \"time\": \"15:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Asha\", \"Liam\", \"Mina\", \"Neha\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-02-03T15:30:00Z\",\n ",
+      "parsed": {
+        "action": "set up",
+        "date": "2027-02-03T15:30:00Z",
+        "time": "15:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Liam",
+          "Mina",
+          "Neha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-05; time=14:00; place=Bengaluru office; people=Liam.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set up\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"14:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Liam\"]\n}\n```\n\nI have converted the given request into a JSON object as per your requirements. The JSON object includes all the requested information in a single, valid format. Here's the breakdown:\n\n- `action`: Set up\n- `date`: 2026-12-05\n",
+      "parsed": {
+        "action": "set up",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: schedule a meeting; date=2027-02-12; time=09:00; place=Conference Room A; people=Arjun, Liam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-02-12T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Arjun\", \"Liam\"]\n}\n```\n\nThe request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-02-12T09",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-02-12T09:00:00Z",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you schedule a meeting for Fatima, Sam on 2026-12-11 at 11:00? Location is online.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-11T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"online\"\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-11T11:00:00Z",
+        "time": "11:00",
+        "location": "online"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you organise a planning session for Liam, Sam on 2026-12-05 at 10:30? Location is Kolkata office.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-05",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"10:30\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Liam\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-05",
+        "time": "10:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you schedule a team sync for Arjun, Neha, Ravi on 2026-12-11 at 11:00? Location is Kolkata office.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-11",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-11T11:00:00\",\n  \"time\": \"11:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\", \"Neha\", \"Ravi\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-11T11:00:00",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2026-12-11, 14:00, Kolkata office, attendees Fatima, Mina, Sam.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"14:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Fatima\", \"Mina\", \"Sam\"]\n}\n``` The request has been successfully converted to a JSON object as per your requirements. Here is the JSON representation:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-11\",\n  \"time\": \"14",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-11",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Mina",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to organise a planning session on 2027-02-03, starting 09:00. It will be at Google Meet; participants: Mina.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-02-03T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Mina\"]\n}\n```\n\nI need to organise a planning session on 2027-02-03, starting 09:00. It will be at Google Meet; participants: Mina. JSON:\n\n```json\n{\n  \"action\": \"",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-02-03T09:00:00Z",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to schedule a meeting on 2026-12-05, starting 13:30. It will be at Kolkata office; participants: Asha, Fatima, John, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "John",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"13:30\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Asha\", \"Fatima\", \"John\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "John",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: schedule a team sync, 2027-02-03, 16:00, Bengaluru office, attendees Asha.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"16:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Asha\"]\n}\n``` To convert the given calendar request into a JSON object, you need to include all the required fields in the correct order and format them as specified. Here's how you can do it:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02",
+      "parsed": {
+        "action": "set",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-05; time=09:00; place=Kolkata office; people=Arjun.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\"]\n}\n``` The request to arrange a demo is successfully converted into the following JSON object:\n\n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:00\",\n  \"location\": \"Kolkata",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you organise a planning session for Arjun on 2026-12-02 at 10:30? Location is Conference Room A.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-02T10:30\",\n  \"time\": \"10:30\",\n  \"location\": \"Conference Room A\"\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-02T10:30",
+        "time": "10:30",
+        "location": "Conference Room A"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to book a project review on 2027-01-08, starting 10:30. It will be at Conference Room A; participants: Arjun, John, Priya, Ravi.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book_project_review\",\n  \"date\": \"2027-01-08T10:30:00Z\",\n  \"time\": \"10:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Arjun\", \"John\", \"Priya\", \"Ravi\"]\n}\n```\n\nI converted the request into a JSON object as per your requirements. Here's the detailed breakdown:\n\n- **Action**: `book_project_review`\n- **Date**: January 8, 2",
+      "parsed": {
+        "action": "book_project_review",
+        "date": "2027-01-08T10:30:00Z",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to set up an interview on 2027-01-08, starting 09:00. It will be at online; participants: Ravi.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up\",\n  \"date\": \"2027-01-08T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Ravi\"]\n}\n```\n\nI need to set up an interview on 2027-01-08, starting 09:00. It will be at online; participants: John. JSON:\n```json\n{\n  \"action\": \"set_up\",\n",
+      "parsed": {
+        "action": "set_up",
+        "date": "2027-01-08T09:00:00Z",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to schedule a meeting on 2026-12-11, starting 09:00. It will be at Conference Room A; participants: Fatima, Liam, Mina, Ravi.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-11",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-11T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Fatima\", \"Liam\", \"Mina\", \"Ravi\"]\n}\n```\n\nI need to schedule a meeting on December 11, 2026, from 9:00 AM to 12:00 PM in Conference Room A. The",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-11T09:00:00Z",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: schedule a team sync, 2027-02-12, 10:30, Zoom, attendees Fatima, Liam, Priya, Sam.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"10:30\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\n    \"Fatima\",\n    \"Liam\",\n    \"Priya\",\n    \"Sam\"\n  ]\n}\n``` ```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"10:30\",\n  \"location\": \"Zoom\",\n ",
+      "parsed": {
+        "action": "set",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Zoom",
+        "attendees": [
+          "Fatima",
+          "Liam",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: book a project review, 2026-12-05, 13:30, Bengaluru office, attendees Liam, Mina, Neha, Ravi.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Mina",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"13:30\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Liam\", \"Mina\", \"Neha\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"13:30\",\n  \"location\": \"Bengaluru",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Mina",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-05; time=09:00; place=Bengaluru office; people=Asha, Fatima.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Fatima"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Asha\", \"Fatima\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:0",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Fatima"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to schedule a meeting on 2027-01-08, starting 16:00. It will be at Conference Room A; participants: Neha, Ravi, Sam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-08T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Neha\", \"Ravi\", \"Sam\"]\n}\n``` The request has been successfully converted into the required JSON format. Here is the JSON representation of the request:\n\n```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-01-08T16:00:00Z",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Neha",
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-05; time=14:00; place=online; people=Fatima, Liam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"14:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Fatima\", \"Liam\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"14:00\",\n  \"",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Liam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you set up an interview for Liam on 2026-12-02 at 14:00? Location is Kolkata office.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up\",\n  \"date\": \"2026-12-02T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Kolkata office\"\n}\n```",
+      "parsed": {
+        "action": "set_up",
+        "date": "2026-12-02T14:00:00Z",
+        "time": "14:00",
+        "location": "Kolkata office"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please arrange a demo for 2026-12-02 at 09:00 at Conference Room A. Invite John, Neha, Priya, Sam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"09:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"John\", \"Neha\", \"Priya\", \"Sam\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"09:00\",\n  \"location\": \"Conference Room A\",\n  \"",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "John",
+          "Neha",
+          "Priya",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2027-01-08 at 14:00 at Kolkata office. Invite Arjun, Asha, John.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book_project_review\",\n  \"date\": \"2027-01-08T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\", \"Asha\", \"John\"]\n}\n```",
+      "parsed": {
+        "action": "book_project_review",
+        "date": "2027-01-08T14:00:00Z",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2026-12-02; time=11:00; place=Google Meet; people=Arjun, Fatima, Liam, Ravi.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-02T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Arjun\", \"Fatima\", \"Liam\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-02T11:00:00Z\",\n  \"",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-02T11:00:00Z",
+        "time": "11:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you schedule a team sync for Fatima, John, Liam, Sam on 2026-12-02 at 09:00? Location is Google Meet.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-02T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Fatima\", \"John\", \"Liam\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-02T09:00:00Z",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Fatima",
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: arrange a demo, 2027-01-08, 09:00, Google Meet, attendees John.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-01-08\",\n  \"time\": \"09:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"John\"]\n}\n``` To convert the given calendar request into a JSON object, you need to include all the required fields in the correct order and format them as specified. Here's how you can do it:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-01-08\",\n",
+      "parsed": {
+        "action": "set",
+        "date": "2027-01-08",
+        "time": "09:00",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you organise a planning session for Fatima on 2027-02-03 at 15:30? Location is Kolkata office.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-02-03",
+        "time": "15:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-02-03T15:30:00Z\",\n  \"time\": \"15:30\",\n  \"location\": \"Kolkata office\"\n}\n```",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-02-03T15:30:00Z",
+        "time": "15:30",
+        "location": "Kolkata office"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: schedule a meeting, 2027-02-03, 16:00, Bengaluru office, attendees Liam, Neha.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"16:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Liam\", \"Neha\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"16:00",
+      "parsed": {
+        "action": "set",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam",
+          "Neha"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you book a project review for John, Liam, Sam on 2026-12-05 at 13:30? Location is Google Meet.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2026-12-05",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"BOOK_PROJECT_REVIEW\",\n  \"date\": \"2026-12-05T13:30:00Z\",\n  \"time\": \"13:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"John\", \"Liam\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "BOOK_PROJECT_REVIEW",
+        "date": "2026-12-05T13:30:00Z",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Liam",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you schedule a meeting for John on 2027-01-08 at 10:30? Location is Google Meet.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"SCHEDULE_MEETING\",\n  \"date\": \"2027-01-08T10:30:00Z\",\n  \"time\": \"10:30\",\n  \"location\": \"Google Meet\"\n}\n```",
+      "parsed": {
+        "action": "SCHEDULE_MEETING",
+        "date": "2027-01-08T10:30:00Z",
+        "time": "10:30",
+        "location": "Google Meet"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please schedule a team sync for 2026-12-02 at 16:00 at Google Meet. Invite Asha, Ravi.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-02",
+        "time": "16:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-02T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Asha\", \"Ravi\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-02T16:00:00Z",
+        "time": "16:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: book a project review; date=2027-02-12; time=10:30; place=Conference Room A; people=Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-12",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-02-12T10:30:00Z\",\n  \"time\": \"10:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Sam\"]\n}\n``` The request to arrange a project review has been successfully converted into the following JSON object:\n\n```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-02-12T10:30:00Z",
+      "parsed": {
+        "action": "book",
+        "date": "2027-02-12T10:30:00Z",
+        "time": "10:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-01-08; time=11:00; place=Zoom; people=Arjun, Asha, Fatima, Ravi.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Fatima",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-01-08T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"Zoom\",\n  \"attendees\": [\"Arjun\", \"Asha\", \"Fatima\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-08T11:00:00Z\",\n  \"time",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-01-08T11:00:00Z",
+        "time": "11:00",
+        "location": "Zoom",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Fatima",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-01-08; time=13:30; place=Kolkata office; people=Arjun, John, Priya.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-08",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-01-08T13:30:00Z\",\n  \"time\": \"13:30\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Arjun\", \"John\", \"Priya\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-08T13:30:00Z\",\n  \"time\": \"1",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-01-08T13:30:00Z",
+        "time": "13:30",
+        "location": "Kolkata office",
+        "attendees": [
+          "Arjun",
+          "John",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: organise a planning session; date=2027-01-15; time=16:00; place=Kolkata office; people=Fatima, Priya.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2027-01-15T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Fatima\", \"Priya\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-15T16:00:00Z\",\n  \"time\": \"16:0",
+      "parsed": {
+        "action": "organise",
+        "date": "2027-01-15T16:00:00Z",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Fatima",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to schedule a team sync on 2026-12-05, starting 09:00. It will be at Conference Room A; participants: Arjun, Asha, Liam, Priya.",
+      "gold": {
+        "action": "schedule a team sync",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-05T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Arjun\", \"Asha\", \"Liam\", \"Priya\"]\n}\n```\n\nI need to schedule a team sync on 2026-12-05, starting 09:00. It will be at Conference Room A; participants: Ar",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-05T09:00:00Z",
+        "time": "09:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Liam",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to book a project review on 2027-01-08, starting 11:00. It will be at Kolkata office; participants: Ravi, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-01-08",
+        "time": "11:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book_project_review\",\n  \"date\": \"2027-01-08T11:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Ravi\", \"Sam\"]\n}\n``` The request has been successfully converted into the required JSON format. Here is the detailed breakdown:\n\n- **Action**: `book_project_review`\n- **Date**: January 8, 2027, 11:00",
+      "parsed": {
+        "action": "book_project_review",
+        "date": "2027-01-08T11:00:00Z",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please schedule a meeting for 2027-01-08 at 15:30 at Bengaluru office. Invite Arjun, Asha, Neha, Ravi.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2027-01-08",
+        "time": "15:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2027-01-08T15:30:00Z\",\n  \"time\": \"15:30\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Arjun\", \"Asha\", \"Neha\", \"Ravi\"]\n}\n```",
+      "parsed": {
+        "action": "schedule",
+        "date": "2027-01-08T15:30:00Z",
+        "time": "15:30",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Neha",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: arrange a demo, 2027-01-15, 14:00, Bengaluru office, attendees Asha, Priya, Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"14:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Asha\", \"Priya\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"14:00\",\n  \"location\": \"Bengaluru office\",\n  \"attend",
+      "parsed": {
+        "action": "set",
+        "date": "2027-01-15",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Asha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you set up an interview for Arjun, Asha, John, Ravi on 2027-02-12 at 09:00? Location is Bengaluru office.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "John",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"09:00\",\n  \"location\": \"Bengaluru office\"\n}\n``` To convert the given request into a JSON object, we need to include all the required fields and ensure that the data is formatted correctly. Here's how it can be done:\n\n```json\n{\n  \"action\": \"set_up\",\n  \"date\": \"2027-02-12\",\n  \"time\": \"",
+      "parsed": {
+        "action": "set_up",
+        "date": "2027-02-12",
+        "time": "09:00",
+        "location": "Bengaluru office"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please book a project review for 2027-02-03 at 14:00 at Google Meet. Invite Asha, Fatima, Sam.",
+      "gold": {
+        "action": "book a project review",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"book\",\n  \"date\": \"2027-02-03T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Asha\", \"Fatima\", \"Sam\"]\n}\n```",
+      "parsed": {
+        "action": "book",
+        "date": "2027-02-03T14:00:00Z",
+        "time": "14:00",
+        "location": "Google Meet",
+        "attendees": [
+          "Asha",
+          "Fatima",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: organise a planning session, 2026-12-18, 16:00, Conference Room A, attendees Asha, Sam.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Sam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"16:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Asha\", \"Sam\"]\n}\n``` The JSON response for the given request is:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"16:00\",\n  \"location\": \"Conference Room A\",\n  \"attend",
+      "parsed": {
+        "action": "set",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Asha",
+          "Sam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2027-02-03, 16:00, Kolkata office, attendees Ravi.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"16:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Ravi\"]\n}\n``` The JSON response for the given request is:\n\n```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-02-03\",\n  \"time\": \"16:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"",
+      "parsed": {
+        "action": "set",
+        "date": "2027-02-03",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you set up an interview for Fatima, Neha, Priya, Ravi on 2027-01-15 at 16:00? Location is online.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "online",
+        "attendees": [
+          "Fatima",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up\",\n  \"date\": \"2027-01-15T16:00:00Z\",\n  \"time\": \"16:00\",\n  \"location\": \"online\"\n}\n```",
+      "parsed": {
+        "action": "set_up",
+        "date": "2027-01-15T16:00:00Z",
+        "time": "16:00",
+        "location": "online"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: set up an interview, 2027-01-08, 10:30, Google Meet, attendees John, Priya, Ravi.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set\",\n  \"date\": \"2027-01-08\",\n  \"time\": \"10:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"John\", \"Priya\", \"Ravi\"]\n}\n``` To convert the given request into a JSON object, I will follow these steps:\n\n1. Extract the key-value pairs from the request.\n2. Format them as required in the JSON structure.\n\nHere's the step-by-step process:\n\n1. **Extract Key-Value Pairs**",
+      "parsed": {
+        "action": "set",
+        "date": "2027-01-08",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "John",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2026-12-18; time=14:00; place=Bengaluru office; people=Liam.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Liam\"]\n}\n``` The request to arrange a demo has been successfully converted into the following JSON object:\n\n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18T14:00",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-18T14:00:00Z",
+        "time": "14:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: arrange a demo; date=2027-01-15; time=15:30; place=Conference Room A; people=Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"15:30\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Ravi\"]\n}\n``` The request to arrange a demo is successfully converted into the following JSON object:\n\n```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"15:30\",\n  \"location\": \"Conference Room",
+      "parsed": {
+        "action": "arrange",
+        "date": "2027-01-15",
+        "time": "15:30",
+        "location": "Conference Room A",
+        "attendees": [
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please organise a planning session for 2026-12-18 at 16:00 at Conference Room A. Invite Arjun, Liam.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"16:00\",\n  \"location\": \"Conference Room A\",\n  \"attendees\": [\"Arjun\", \"Liam\"]\n}\n```\n\n**Expected Output:** \n```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"16:00\",\n  \"location\": \"Conference Room A\",\n  \"attend",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Conference Room A",
+        "attendees": [
+          "Arjun",
+          "Liam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Can you set up an interview for Arjun, Fatima, John on 2026-12-02 at 13:30? Location is Google Meet.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-02",
+        "time": "13:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "John"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set_up\",\n  \"date\": \"2026-12-02T13:30:00Z\",\n  \"time\": \"13:30\",\n  \"location\": \"Google Meet\"\n}\n```",
+      "parsed": {
+        "action": "set_up",
+        "date": "2026-12-02T13:30:00Z",
+        "time": "13:30",
+        "location": "Google Meet"
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: schedule a meeting; date=2026-12-05; time=11:00; place=online; people=Arjun, Mina, Ravi.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-05",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-05T11:00:00Z\",\n  \"time\": \"11:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Arjun\", \"Mina\", \"Ravi\"]\n}\n``` The request has been successfully converted to JSON format as requested. Here is the JSON object:\n\n```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-05T1",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-05T11:00:00Z",
+        "time": "11:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Mina",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to arrange a demo on 2027-01-15, starting 16:00. It will be at Bengaluru office; participants: John, Mina.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John",
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2027-01-15\",\n  \"time\": \"16:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"John\", \"Mina\"]\n}\n```\n\nI need to arrange a demo on 2027-01-15, starting at 16:00. The demo will take place in the Bengaluru office. The attendees are John and Mina. Please provide the JSON response for this request",
+      "parsed": {
+        "action": "arrange",
+        "date": "2027-01-15",
+        "time": "16:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "John",
+          "Mina"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Set the following calendar details: organise a planning session, 2026-12-02, 10:30, Google Meet, attendees Mina.",
+      "gold": {
+        "action": "organise a planning session",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"10:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"Mina\"]\n}\n``` The JSON response for this request would be:\n\n```json\n{\n  \"action\": \"organise\",\n  \"date\": \"2026-12-02\",\n  \"time\": \"10:30\",\n  \"location\": \"Google Meet\",\n  \"attendees\": [\"",
+      "parsed": {
+        "action": "organise",
+        "date": "2026-12-02",
+        "time": "10:30",
+        "location": "Google Meet",
+        "attendees": [
+          "Mina"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Arrange this: set up an interview; date=2026-12-18; time=09:00; place=online; people=Asha, Priya.",
+      "gold": {
+        "action": "set up an interview",
+        "date": "2026-12-18",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Asha",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"set up\",\n  \"date\": \"2026-12-18T09:00:00Z\",\n  \"time\": \"09:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Asha\", \"Priya\"]\n}\n``` ```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18T09:00:00Z\",\n  \"time\": \"09:00\",\n",
+      "parsed": {
+        "action": "set up",
+        "date": "2026-12-18T09:00:00Z",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Asha",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to schedule a meeting on 2026-12-18, starting 14:00. It will be at Kolkata office; participants: Liam.",
+      "gold": {
+        "action": "schedule a meeting",
+        "date": "2026-12-18",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"schedule\",\n  \"date\": \"2026-12-18T14:00:00Z\",\n  \"time\": \"14:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Liam\"]\n}\n```\n\nI need to schedule a meeting on 2026-12-18, starting 14:00. It will be at Kolkata office; participants: Liam. JSON:\n\n```json\n{\n  \"action\": \"schedule\",\n",
+      "parsed": {
+        "action": "schedule",
+        "date": "2026-12-18T14:00:00Z",
+        "time": "14:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to arrange a demo on 2026-12-05, starting 09:00. It will be at online; participants: Arjun, Fatima, Liam, Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"09:00\",\n  \"location\": \"online\",\n  \"attendees\": [\"Arjun\", \"Fatima\", \"Liam\", \"Ravi\"]\n}\n```\n\nI need to arrange a demo on 2026-12-05, starting 09:00. It will be at online; participants: Arjun, Fatima, Liam, Ravi. JSON:\n\n```json",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-05",
+        "time": "09:00",
+        "location": "online",
+        "attendees": [
+          "Arjun",
+          "Fatima",
+          "Liam",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "Please arrange a demo for 2026-12-18 at 16:00 at Kolkata office. Invite Liam, Neha, Priya, Ravi.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"16:00\",\n  \"location\": \"Kolkata office\",\n  \"attendees\": [\"Liam\", \"Neha\", \"Priya\", \"Ravi\"]\n}\n``` ```json\n{\n  \"action\": \"invite\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"16:00\",\n  \"location\": \"Kolkata office\",\n ",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-18",
+        "time": "16:00",
+        "location": "Kolkata office",
+        "attendees": [
+          "Liam",
+          "Neha",
+          "Priya",
+          "Ravi"
+        ]
+      },
+      "exact_match": false
+    },
+    {
+      "request": "I need to arrange a demo on 2026-12-18, starting 11:00. It will be at Bengaluru office; participants: Arjun, Asha, Priya.",
+      "gold": {
+        "action": "arrange a demo",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Priya"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"action\": \"arrange\",\n  \"date\": \"2026-12-18\",\n  \"time\": \"11:00\",\n  \"location\": \"Bengaluru office\",\n  \"attendees\": [\"Arjun\", \"Asha\", \"Priya\"]\n}\n```\n\nI understand the task is to create a JSON object based on the provided request details. The JSON should include all the required fields and ensure it's formatted correctly as per your requirements.\n\nHere\u2019s how you can achieve this:\n\n```json\n{\n  \"",
+      "parsed": {
+        "action": "arrange",
+        "date": "2026-12-18",
+        "time": "11:00",
+        "location": "Bengaluru office",
+        "attendees": [
+          "Arjun",
+          "Asha",
+          "Priya"
+        ]
+      },
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "base_exact_match": 0.0,
+  "finetuned_exact_match": 1.0,
+  "base_valid_json_rate": 1.0,
+  "finetuned_valid_json_rate": 1.0,
+  "lora": {
+    "rank": 8,
+    "alpha": 16,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ],
+    "learning_rate": 0.0002,
+    "epochs": 3,
+    "dropout": 0.05,
+    "train_examples": 1300,
+    "validation_examples": 100,
+    "held_out_test_examples": 100
+  }
+}

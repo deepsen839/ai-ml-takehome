@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Model checkpoints and caches
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+models/
+checkpoints/
+.cache/
+huggingface/
+
+# Temporary files
+*.log
+.ipynb_checkpoints/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

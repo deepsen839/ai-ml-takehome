@@ -1,0 +1,182 @@
+[
+  {
+    "mode": "fp16",
+    "prompt": "Explain the difference between supervised and unsupervised learning in three sentences.",
+    "output": "Supervised learning is a type of machine learning where the model learns from labeled data, meaning that it has been given examples or training data with corresponding labels (correct answers) for each example. The goal of supervised learning is to predict the output variable based on input variables, using the known correct outputs as a reference.\n\nUnsupervised learning, on the other hand, is a type of machine learning where the model learns from unlabeled data, meaning that it does not have any pre-existing examples or labels to work with. Instead, the goal is to discover patterns, structures, or relationships within the data itself without prior knowledge. Unsupervised",
+    "generated_tokens": 128,
+    "latency_seconds": 5.674706612999898,
+    "tokens_per_second": 22.55623219476603,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Write a Python function that returns the factorial of a non-negative integer.",
+    "output": "Certainly! Below is a Python function that calculates the factorial of a given non-negative integer using recursion:\n\n```python\ndef factorial(n):\n    \"\"\"\n    Calculate the factorial of a non-negative integer n.\n    \n    Parameters:\n    n (int): A non-negative integer whose factorial is to be calculated.\n\n    Returns:\n    int: The factorial of n.\n    \"\"\"\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\n# Example usage:\nprint(factorial(5))  # Output: 120\n```\n\n### Explanation:\n- **Base Case**: If",
+    "generated_tokens": 128,
+    "latency_seconds": 4.991485519000207,
+    "tokens_per_second": 25.64366850565127,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Give five practical ways to reduce overfitting in a machine learning model.",
+    "output": "Reducing overfitting is crucial for improving the generalization ability of a machine learning model. Overfitting occurs when a model learns the training data too well, capturing noise and details that do not generalize to new data. Here are five practical ways to address this issue:\n\n1. **Regularization Techniques**: Regularization methods such as L1 (Lasso) or L2 (Ridge) regularization can be used to prevent the model from fitting the noise in the training data. These techniques add a penalty term to the loss function proportional to the magnitude of the coefficients, encouraging the model to shrink the coefficients towards zero.\n\n2. **",
+    "generated_tokens": 128,
+    "latency_seconds": 4.972008262000145,
+    "tokens_per_second": 25.744124557932256,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Explain what a REST API is to a junior Python developer.",
+    "output": "A REST API (Representational State Transfer) is a set of protocols and standards for building web services that allow clients to interact with servers using HTTP requests and responses. It's designed to be simple, flexible, and easy to use.\n\nHere\u2019s how it works:\n\n1. **HTTP Requests**: When you make an HTTP request to a server, the client sends a request to the server using a specific protocol (e.g., GET, POST, PUT, DELETE). The server then responds with a response in JSON format or another language.\n\n2. **Response Format**: The server returns data in a structured format called JSON (JavaScript Object Notation",
+    "generated_tokens": 128,
+    "latency_seconds": 4.924856556999885,
+    "tokens_per_second": 25.99060470463221,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Return valid JSON with keys name and role for a person named Asha who is an ML engineer.",
+    "output": "```json\n{\n  \"name\": \"Asha\",\n  \"role\": \"ML Engineer\"\n}\n```",
+    "generated_tokens": 23,
+    "latency_seconds": 0.8951109110000743,
+    "tokens_per_second": 25.695139805974378,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Describe the purpose of a vector database in a RAG application.",
+    "output": "A Vector Database (VDB) is an advanced data storage and retrieval system designed to efficiently store and retrieve large volumes of structured or semi-structured data. In a RAG (Real-time Application Gateway) context, a VDB serves several critical purposes:\n\n1. **Data Storage**: VDBs provide a scalable and efficient way to store data across multiple servers. This allows for better scalability as more data can be added without increasing the number of physical servers.\n\n2. **Query Optimization**: By using indexing techniques and query optimization algorithms, VDBs can quickly find and retrieve specific data based on user queries. This reduces the time required to",
+    "generated_tokens": 128,
+    "latency_seconds": 4.932889796999916,
+    "tokens_per_second": 25.94827885225553,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "What is the difference between precision and recall?",
+    "output": "Precision and recall are two important metrics used in machine learning to evaluate the performance of classification models. Here's a detailed comparison of these two metrics:\n\n1. Precision:\n   - Precision measures the proportion of true positive (correctly classified) predictions out of all predicted positives.\n   - It is calculated as: \n     \\[\n     \\text{Precision} = \\frac{\\text{True Positives}}{\\text{True Positives} + \\text{False Negatives}}\n     \\]\n   - A high precision indicates that the model correctly identifies most of its positive instances.\n\n2. Recall:\n   - Recall measures the proportion of actual",
+    "generated_tokens": 128,
+    "latency_seconds": 4.927775428000132,
+    "tokens_per_second": 25.97520968035408,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Write a SQL query to count orders per customer from an orders table.",
+    "output": "To count the number of orders per customer in an `orders` table, you can use the following SQL query:\n\n```sql\nSELECT \n    customer_id,\n    COUNT(*) AS order_count\nFROM \n    orders\nGROUP BY \n    customer_id;\n```\n\n### Explanation:\n- **customer_id**: This is the unique identifier for each customer.\n- **COUNT(*)**: Counts the number of rows where `customer_id` matches the current row's value.\n- **AS order_count**: Renames the column to \"order_count\" so that it appears as a separate column in the result set.\n- **FROM orders**: Specifies the table",
+    "generated_tokens": 128,
+    "latency_seconds": 4.942561835999868,
+    "tokens_per_second": 25.89750098171628,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "Explain quantisation in large language models without using equations.",
+    "output": "Quantization is a process used to reduce the size of data that needs to be stored or processed. In the context of large language models (LLMs), which are deep learning models designed to generate human-like text, quantization involves reducing the precision and complexity of the model's parameters.\n\n### Key Components of Quantization\n\n1. **Precision Reduction**:\n   - The model uses floating-point numbers for its computations.\n   - Quantization reduces these numbers to a smaller range, typically between 0 and 1, to make them more manageable for hardware processing.\n\n2. **Complexity Reduction**:\n   - By reducing the number of bits",
+    "generated_tokens": 128,
+    "latency_seconds": 5.080412631999934,
+    "tokens_per_second": 25.194803901117783,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "fp16",
+    "prompt": "List a safe deployment checklist for a small FastAPI machine-learning service.",
+    "output": "Certainly! Here's a comprehensive list of safety checks to ensure your small FastAPI machine learning service is secure:\n\n1. **Environment Variables**: Ensure that all environment variables used in your FastAPI application are properly configured and not exposed publicly.\n\n2. **Authentication**: Implement proper authentication mechanisms such as JWT tokens or OAuth 2.0 for user access control.\n\n3. **Database Security**: Use strong encryption for database connections and consider implementing role-based access controls (RBAC) to restrict access based on roles.\n\n4. **File Storage**: Store sensitive files securely using cloud storage services like AWS S3 or Google Cloud Storage.\n\n5. **SSL",
+    "generated_tokens": 128,
+    "latency_seconds": 5.049187753000069,
+    "tokens_per_second": 25.350612071010115,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Explain the difference between supervised and unsupervised learning in three sentences.",
+    "output": "Supervised learning involves training a model on labeled data to predict the target variable based on input features. It is often used for tasks such as classification or regression where we have a known outcome (target) and corresponding input features.\n\nUnsupervised learning, on the other hand, involves training a model on unlabeled data to discover patterns or structure within it. This type of learning can be useful for tasks such as clustering, anomaly detection, and feature selection. In unsupervised learning, the goal is to identify groups of data points that share common characteristics without any prior knowledge about them.",
+    "generated_tokens": 118,
+    "latency_seconds": 5.575755274999892,
+    "tokens_per_second": 21.16305221089573,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Write a Python function that returns the factorial of a non-negative integer.",
+    "output": "Certainly! Below is a Python function that calculates the factorial of a given non-negative integer:\n\n```python\ndef factorial(n):\n    if n < 0:\n        raise ValueError(\"Factorial is not defined for negative numbers\")\n    \n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    \n    return result\n\n# Example usage:\nprint(factorial(5))  # Output: 120\n```\n\n### Explanation:\n- **Input Validation**: The function first checks if `n` is less than zero. If it is, it raises a `ValueError` with",
+    "generated_tokens": 128,
+    "latency_seconds": 5.933966025000018,
+    "tokens_per_second": 21.57073354662485,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Give five practical ways to reduce overfitting in a machine learning model.",
+    "output": "Reducing overfitting is a crucial step in building effective and robust models for various applications, including classification tasks like binary classification or regression tasks. Here are five practical methods to achieve this:\n\n1. **Regularization Techniques:**\n   - **Lasso (Least Absolute Shrinkage and Selection Operator) Regression:** This method adds an additional term to the loss function that encourages the model to select only the most important features while penalizing large coefficients.\n   - **Ridge Regression:** Similar to Lasso, but with a different penalty term that shrinks both the magnitude of the coefficients and their signs.\n\n2. **Dropout Technique:",
+    "generated_tokens": 128,
+    "latency_seconds": 5.897834369000066,
+    "tokens_per_second": 21.702881429290027,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Explain what a REST API is to a junior Python developer.",
+    "output": "A REST API stands for Representational State Transfer (REST) and is an architectural style that describes how APIs should be implemented in software systems. It's based on the HTTP protocol, which allows data to be sent from one application to another.\n\nIn simple terms, it means:\n\n1. **Representations**: The data returned by the server is represented as JSON objects or XML documents.\n2. **Stateless**: The client doesn't need to know about the details of the request or response; they just send requests and get responses without any state.\n3. **Relay**: The communication between clients is transparent, so you can change your code",
+    "generated_tokens": 128,
+    "latency_seconds": 5.886218890999999,
+    "tokens_per_second": 21.745708470969607,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Return valid JSON with keys name and role for a person named Asha who is an ML engineer.",
+    "output": "Certainly! Here's the valid JSON representation of the information you've requested:\n\n```json\n{\n  \"name\": \"Asha\",\n  \"role\": \"ML Engineer\"\n}\n```\n\nThis JSON object includes both the `name` and `role`, which are typical fields in such a structure to represent the person's identity and job title.",
+    "generated_tokens": 70,
+    "latency_seconds": 3.2891187590000754,
+    "tokens_per_second": 21.282296301542086,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Describe the purpose of a vector database in a RAG application.",
+    "output": "A Vector Database (VDB) is a type of database that stores data as vectors, which allows for efficient querying and manipulation of large amounts of structured data. In a RAG (Real-time Application Gateway) system, a VDB can be used to store and manage various types of data, such as user profiles, event logs, and transaction records.\n\nThe purpose of using a VDB in a RAG application could include:\n\n1. Efficient Data Storage: A VDB provides an efficient way to store large volumes of data, reducing the need for frequent updates or deletions.\n2. Scalability: By storing data in a single V",
+    "generated_tokens": 128,
+    "latency_seconds": 5.870327728999882,
+    "tokens_per_second": 21.804574788502848,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "What is the difference between precision and recall?",
+    "output": "Precision and recall are two important metrics in evaluating the performance of machine learning models, particularly in classification tasks.\nPrecision is a measure of how well a model predicts positive outcomes (i.e., correctly classifying instances as either positive or negative) when there is no false negatives (instances that are misclassified as negative). It is defined as:\nPrecision = True Positive / (True Positive + False Negative)\nRecall, on the other hand, is a measure of how well a model predicts positive outcomes (i.e., correctly classifies instances as either positive or negative), even if it misses some true positives (i.e., incorrectly classifies instances as",
+    "generated_tokens": 128,
+    "latency_seconds": 5.95735007799999,
+    "tokens_per_second": 21.4860631529266,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Write a SQL query to count orders per customer from an orders table.",
+    "output": "Certainly! Below is the SQL query that counts the number of orders each customer has:\n\n```sql\nSELECT \n    customer_id,\n    COUNT(order_id) AS order_count\nFROM \n    orders\nGROUP BY \n    customer_id;\n```\n\nThis query does the following:\n1. It selects `customer_id` and calculates the count of `order_id`.\n2. It groups the results by `customer_id`.\n\nThe result will be a list where each entry contains the `customer_id` and the corresponding `order_count`.",
+    "generated_tokens": 106,
+    "latency_seconds": 4.928707123000095,
+    "tokens_per_second": 21.506654251242665,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "Explain quantisation in large language models without using equations.",
+    "output": "Quantization is a technique used to reduce the size of data that needs to be stored or processed. In the context of large language models (LLMs), this involves reducing the number of bits required to represent each word in the model's vocabulary.\n\nHere\u2019s how it works:\n\n1. **Input Representation**: The input to an LLM is typically a sequence of tokens, where each token represents a word in the vocabulary. For example, \"the quick brown fox jumps over the lazy dog\" would be represented as a 300-dimensional vector.\n\n2. **Quantization Process**:\n   - **Bit Quantization**: Each bit in",
+    "generated_tokens": 128,
+    "latency_seconds": 5.972006413000145,
+    "tokens_per_second": 21.433332643676266,
+    "manual_quality_notes": ""
+  },
+  {
+    "mode": "4bit_nf4",
+    "prompt": "List a safe deployment checklist for a small FastAPI machine-learning service.",
+    "output": "Certainly! Here is a list of safety checks that can be performed to ensure the security and stability of your small FastAPI machine learning service:\n\n1. **Security Headers:**\n   - Ensure you have the latest version of the `X-Frame-Options`, `Content-Security-Policy`, and `Strict-Transport-Security` headers in your application.\n   - Review the `Access-Control-Allow-Origin` header to understand which origins are allowed to access your API.\n\n2. **Authentication:**\n   - Implement OAuth 2.0 or JWT authentication with proper authorization rules.\n   - Use HTTPS for secure communication between clients and servers.\n\n",
+    "generated_tokens": 128,
+    "latency_seconds": 5.87634639099997,
+    "tokens_per_second": 21.782242142165213,
+    "manual_quality_notes": ""
+  }
+]
